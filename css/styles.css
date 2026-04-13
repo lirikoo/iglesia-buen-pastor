@@ -67,21 +67,27 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 /* =========================================
    CARRUSEL (HERO SECTION)
    ========================================= */
+/* =========================================
+   CARRUSEL (HERO SECTION)
+   ========================================= */
 .hero-slide {
     height: 85vh;
-    background-size: cover;
+    /* Cambiamos 'cover' por 'contain' para que no se expanda ni se recorte */
+    background-size: contain; 
     background-position: center;
+    background-repeat: no-repeat; /* Evita que la imagen se duplique como mosaico */
+    background-color: #212529; /* Añade un fondo oscuro para rellenar los espacios vacíos a los lados */
 }
 
 /* Puedes poner 3 imágenes distintas para el carrusel en tu carpeta assets/img */
 .slide-1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/img/carrusel-1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/img/carrucel1.jpeg');
 }
 .slide-2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/img/carrusel-2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/img/carrucel2.jpeg');
 }
 .slide-3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/img/carrusel-3.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/img/carrucel3.jpeg');
 }
 
 /* =========================================
