@@ -1,0 +1,113 @@
+/* =========================================
+   VARIABLES DE COLOR VIVOS
+   ========================================= */
+:root {
+    --primary-color: #0d6efd; /* Azul brillante y vivo */
+    --accent-color: #ffc107;  /* Amarillo cálido/dorado vibrante */
+    --text-dark: #212529;
+}
+
+/* =========================================
+   ESTILOS GENERALES
+   ========================================= */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #4f4f4f;
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+}
+
+.text-primary { color: var(--primary-color) !important; }
+.text-accent { color: var(--accent-color) !important; }
+.bg-primary { background-color: var(--primary-color) !important; }
+
+/* Botones personalizados */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* =========================================
+   BARRA DE NAVEGACIÓN
+   ========================================= */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* =========================================
+   CARRUSEL (HERO SECTION)
+   ========================================= */
+.hero-slide {
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Puedes poner 3 imágenes distintas para el carrusel en tu carpeta assets/img */
+.slide-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/img/carrusel-1.jpg');
+}
+.slide-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/img/carrusel-2.jpg');
+}
+.slide-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/img/carrusel-3.jpg');
+}
+
+/* =========================================
+   ELEMENTOS DECORATIVOS Y TARJETAS
+   ========================================= */
+/* Línea divisoria debajo de los títulos */
+.divider-custom {
+    height: 4px;
+    width: 60px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+}
+
+/* Animación para las tarjetas de ministerios */
+.ministerio-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden; /* Mantiene la imagen dentro del borde redondeado */
+}
+
+.ministerio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.15) !important;
+}
+
+.ministerio-card img {
+    height: 250px;
+    object-fit: cover; /* Evita que la imagen se deforme */
+}
